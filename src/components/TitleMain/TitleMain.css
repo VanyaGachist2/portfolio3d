@@ -17,6 +17,10 @@
   margin: 23px auto 0 auto;
 }
 
+.title__title_white {
+  color: white;
+}
+
 @media screen and (max-width: 561px) {
   .title__title {
     font-size: 18px;

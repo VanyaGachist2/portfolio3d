@@ -1,14 +1,71 @@
 .about {
-  background: white;
+  background: rgb(254, 216, 232);
   width: 100%;
   margin: 0;
   padding-top: 90px;
   box-sizing: border-box;
 }
 
+.about_dark {
+  background-color: rgb(66, 66, 66);
+}
+
 .about__container {
   max-width: 672px;
-  background-color: white;
+  background-color: rgb(254, 216, 232);
   margin: 0 auto;
   color: black;
 }
+
+.about__container_dark {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+.about__heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  max-width: 453px;
+}
+
+.about__subtitle {
+  margin-top: 1.5rem;
+  max-width: 453px;
+  font-size: 1rem;
+}
+
+.about__social {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 50px;
+}
+
+.about__icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.about__icon_github {
+  background-image: url('../../assets/images/github__dark.svg');
+}
+
+.about__icon_github:hover {
+  background-image: url('../../assets/images/github_blue.svg');
+}
+
+
+.about__icon_github_white {
+  background-image: url('../../assets/images/github_for_white.svg');
+}
+
+.about__icon_github_white:hover {
+  background-image: url('../../assets/images/github_blue.svg');
+}
+

@@ -1,45 +1,29 @@
-@keyframes animated-text{
-  from {
-    width: 0;
-  }
-  to {
-    width: 443px;
-  }
-}
-
-@keyframes animated-text_for_min {
-  from {
-    width: 0;
-  }
-  to {
-    width: 350px;
-  }
-}
-
-@keyframes animated-cursor{
-  from {
-    border-right-color: rgba(0, 255, 0, .75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
 .home {
   width: 100%;
-  background-color: white;
+  background-color: rgb(248, 197, 205);
   padding: 0;
   margin: 0;
   color: black;
 }
 
+.home_dark {
+  background-color: rgb(32, 32, 32);
+}
+
 .home__container {
   max-width: 672px;
+  background-color: rgb(248, 197, 205);
   margin: 0 auto;
   padding-top: 150px;
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  color: black;
+}
+
+.home__container_dark {
+  background-color: rgb(32, 32, 32);
+  color: white;
 }
 
 .home__message {
@@ -51,7 +35,7 @@
 .home__title {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 23px;
   font-weight: 400;
   line-height: -0.04em;
   max-width: 640px;
@@ -79,11 +63,10 @@
   z-index: 2;
 }
 
-.home__sub {
-  animation: animated-text 4s steps(29, end) 1s 1 normal both,
-             animated-cursor 600ms steps(29, end) infinite;
+.home__animate {
+  width: 400px;
+  height: 300px;
 }
-
 
 @media screen and (max-width: 719px) {
   .home__container {
@@ -98,6 +81,12 @@
     align-self: center;
   }
 
+  .home__animate {
+    align-self: center;
+    max-width: 672px;
+  }
+
+
   .home__message {
     order: 2;
     text-align: center;
@@ -108,12 +97,5 @@
   .home__title {
     font-size: 23px;
     max-width: 719px;
-  }
-
-  .home__sub {
-    font-size: 26px;
-    align-self: center;
-    animation: animated-text_for_min 4s steps(29, end) 1s 1 normal both,
-             animated-cursor 600ms steps(29, end) infinite;
   }
 }
