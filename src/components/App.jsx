@@ -4,6 +4,7 @@ import Contact from './Contact/Contact'
 import Header from './Header/Header'
 import Home from './Home/Home'
 import Skills from './Skills/Skills'
+import Projects from './Projects/Projects'
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -27,6 +28,7 @@ function App() {
       <Home homeDark={isDark} />
       <About aboutDark={isDark} isTrue={isDark} />
       <Skills darkSkills={isDark} />
+      <Projects />
       <Contact />
     </main>
   )
