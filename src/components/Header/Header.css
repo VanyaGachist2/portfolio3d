@@ -48,6 +48,10 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: rgb(114, 114, 114);
+}
+
 .header__link_color_dark {
   color: white;
 }

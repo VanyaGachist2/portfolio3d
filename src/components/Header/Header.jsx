@@ -8,11 +8,11 @@ function Header({ isDark, toogleButton }) {
     },
     {
       href: '#',
-      title: 'Home',
+      title: 'About',
     },
     {
       href: '#',
-      title: 'About',
+      title: 'Skills',
     },
     {
       href: '#',
