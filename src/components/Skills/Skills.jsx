@@ -5,18 +5,17 @@ import SkillsAnimation from './SkillsAnimation';
 
 function Skills ({ darkSkills }) {
   let white = true;
+  const textForSkills = {
+    titleMain: 'Skills',
+    description: 'rkfjrfjitgjtrigjirtjgirtjgirtgjirjgirtjgrt rtgijrtgijrtigjrtigjrijgirtjgirtjgirtjgirtjg trigjrtitgjritjgirtjgirtgirtjgirjtg trgjrtigjritjgrtig'
+  }
 
   return (
     <section className={`skills ${darkSkills ? 'skills_dark' : ''}`}>
       <article className={`skills__container ${darkSkills ? 'skills__container_dark' : ''}`}>
-        <TitleMain name='Skills' isTrue={white} />
+        <TitleMain name={textForSkills.titleMain} isTrue={white} />
         <div className='skills__skills'>
-        <p className='skills__description'>
-          rkfjrfjitgjtrigjirtjgirtjgirtgjirjgirtjgrt
-          rtgijrtgijrtigjrtigjrijgirtjgirtjgirtjgirtjg
-          trigjrtitgjritjgirtjgirtgirtjgirjtg
-          trgjrtigjritjgrtig
-        </p>
+        <p className='skills__description'>{textForSkills.description}</p>
         <div className='skills__animate'>
           <Canvas className='skills__canvas' camera={{ position: [5, 0, 18] }}>
             <SkillsAnimation />
