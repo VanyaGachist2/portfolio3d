@@ -1,9 +1,17 @@
+:root {
+  --color-background-white: white;
+  --color-background-dark: rgb(32, 32, 32);
+  --color-text-white: white;
+  --color-text-dark: black;
+  --color-text-gray: gray;
+}
+
 .app {
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
   width: 100%;
-  font-family: "Consolas", Arial, sans-serif;
+  font-family: monospace, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

@@ -1,6 +1,6 @@
 import './TitleMain.css';
 
-function TitleMain () {
+function TitleMain ({ name }) {
   return (
     <div className='title'>
       <h2 className="title__title">{name}</h2>
