@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(72, 71, 71);
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 672px;
+  background-color: rgb(72, 71, 71);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: gray;
+}
