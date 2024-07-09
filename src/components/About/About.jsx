@@ -1,5 +1,6 @@
 import TitleMain from "../TitleMain/TitleMain";
 import './About.css';
+import avatar from '../../assets/images/y7zI5l7gfhM.jpeg';
 
 function About ({ aboutDark, isTrue }) {
   const aboutText = {
@@ -7,7 +8,7 @@ function About ({ aboutDark, isTrue }) {
     subtitle: `My name is Vanya and i'm a front-end developer
             from Crimea, Russia. I love coding, I love coding, I love coding, I love coding, I love coding
             I love coding, I love coding, I love coding, I love coding, I love coding, I love coding, I love coding,
-            I love coding, I love coding, I love coding, I love coding.`
+            I love coding, I love coding, I love coding, I love coding.`,
   }
   return (
     <section className={`about ${aboutDark ? 'about_dark' : ''}`}>
