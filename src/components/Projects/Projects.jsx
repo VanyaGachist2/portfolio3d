@@ -1,31 +1,27 @@
 import TitleMain from '../TitleMain/TitleMain';
 import './Projects.css';
-import meet from '../../assets/images/встреча.png';
 
-function Projects () {
+function Projects ({ card, onClick }) {
   const textForProjects = {
     titleMain: 'Projects',
   }
+
+  const handleOpenTheCard = () => {
+    onClick(card.images.firstImage, card.title, card.subtitle);
+  }
+
   return (
     <section className="projects">
       <article className='projects__container'>
         <TitleMain name={textForProjects.titleMain} />
           <ul className='projects__list'>
-            <li className='projects__div'>
-              <img className='projects__img' alt='#' src={meet} />
-            </li>
-            <li className='projects__div'>
-              <img className='projects__img' alt='#' src={meet} />
-            </li>
-            <li className='projects__div'>
-              <img className='projects__img' alt='#' src={meet} />
-            </li>
-            <li className='projects__div'>
-              <img className='projects__img' alt='#' src={meet} />
-            </li>
-            <li className='projects__div'>
-              <img className='projects__img' alt='#' src={meet} />
-            </li>
+            {card.map((c) => {
+              return (
+                <li key={c.id} className='projects__div'>
+                  <img onClick={handleOpenTheCard} className='projects__img' alt='#' src={c.images.firstImage} />
+                </li>
+              )
+            })}
           </ul>
       </article>
 
@@ -34,3 +30,4 @@ function Projects () {
 }
 
 export default Projects;
+
