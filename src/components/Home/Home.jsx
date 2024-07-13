@@ -4,7 +4,8 @@ import { Canvas } from '@react-three/fiber';
 
 function Home ({ homeDark }) {
   const lightImage = 'https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&color=5A5A5A&random=false&width=435&lines=front-end+developer';
-  const darkImage = 'https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&color=F7EDE5&random=false&width=435&lines=front-end+developer';
+  const darkImage = 'https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&color=F1B2CE&random=false&width=435&lines=front-end+developer';
+
   return (
     <section className={`home ${homeDark ? 'home_dark' : ''}`}>
       <article className={`home__container ${homeDark ? 'home__container_dark' : ''}`}>

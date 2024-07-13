@@ -1,26 +1,26 @@
 .header {
-  background-color: rgb(248, 197, 205);
+  background-color: rgb(255, 241, 247);
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 .header_dark {
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(0, 0, 40);
 }
 
 .header__container {
   margin: 0 auto;
   padding-top: 18px;
-  background-color: rgb(248, 197, 205);
+  background-color: rgb(255, 241, 247);
   max-width: 672px;
   display: flex;
   align-items: center;
 }
 
 .header__container_dark {
-  background-color: rgb(32, 32, 32);
-  color: white;
+  background-color: rgb(0, 0, 40);
+  color: rgb(241, 178, 206);
 }
 
 .header__logo {
@@ -53,7 +53,7 @@
 }
 
 .header__link_color_dark {
-  color: white;
+  color: rgb(241, 178, 206);
 }
 
 .header__button {

@@ -3,7 +3,7 @@ import './About.css';
 
 function About ({ aboutDark, isTrue }) {
   const aboutText = {
-    title: "Hello World!",
+    title: "// Hello World!",
     subtitle: `My name is Vanya and i'm a front-end developer
             from Crimea, Russia. I love coding, I love coding, I love coding, I love coding, I love coding
             I love coding, I love coding, I love coding, I love coding, I love coding, I love coding, I love coding,

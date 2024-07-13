@@ -4,7 +4,6 @@ import './Skills.css';
 import SkillsAnimation from './SkillsAnimation';
 
 function Skills ({ darkSkills }) {
-  let white = true;
   const textForSkills = {
     titleMain: 'Skills',
     description: 'rkfjrfjitgjtrigjirtjgirtjgirtgjirjgirtjgrt rtgijrtgijrtigjrtigjrijgirtjgirtjgirtjgirtjg trigjrtitgjritjgirtjgirtgirtjgirjtg trgjrtigjritjgrtig'
@@ -13,7 +12,7 @@ function Skills ({ darkSkills }) {
   return (
     <section className={`skills ${darkSkills ? 'skills_dark' : ''}`}>
       <article className={`skills__container ${darkSkills ? 'skills__container_dark' : ''}`}>
-        <TitleMain name={textForSkills.titleMain} isTrue={white} />
+        <TitleMain name={textForSkills.titleMain} isTrue={darkSkills} />
         <div className='skills__skills'>
         <p className='skills__description'>{textForSkills.description}</p>
         <div className='skills__animate'>
