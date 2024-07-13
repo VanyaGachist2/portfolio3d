@@ -1,6 +1,20 @@
 @font-face {
-  font-family: 'Consolas';
-  src: url('./Consolas.woff')format('woff');
-  src: url('./Consolas.woff2')format('woff2');
-  src: url('./Consolas.ttf')format('ttf');
+  font-family: 'JetBrain';
+  src: url('./JetBrainsMono-Bold.ttf')format('ttf');
+  src: url('./JetBrainsMono-Bold.woff2')format('woff2');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'JetBrain';
+  src: url('./JetBrainsMono-Medium.ttf')format('ttf');
+  src: url('./JetBrainsMono-Medium.woff2')format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'JewBrain';
+  src: url('./JetBrainsMono-Regular.ttf')format('ttf');
+  src: url('./JetBrainsMono-Regular.woff2')format('woff2');
+  font-weight: 400;
 }
