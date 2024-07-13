@@ -1,11 +1,9 @@
-import TitleMain from '../TitleMain/TitleMain';
 import './Contact.css';
 
 function Contact () {
   return (
     <section className="contact">
       <article className="contact__container">
-        <TitleMain name='Contact' />
         <form className='contact__form'>
           <input
             type='text'
@@ -25,7 +23,7 @@ function Contact () {
           <div className='contact__buttons'>
             <a href='https://vk.com/ibolvan123' className='contact__link contact__link_telegram'></a>
             <a href='https://github.com/VanyaGachist2' className='contact__link contact__link_github'></a>
-            <a href='#' className='contact__link contact__link_steam'></a>
+            <a href='https://steamcommunity.com/id/674931' className='contact__link contact__link_steam'></a>
           </div>
           <button type='submit' className='contact__button'>Отправить</button>
         </form>

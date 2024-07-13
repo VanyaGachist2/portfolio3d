@@ -6,14 +6,14 @@
 }
 
 .contact__container {
-  max-width: 672px;
+  max-width: 872px;
   margin: 0 auto;
   padding-top: 100px;
   background-color: rgb(72, 71, 71);
 }
 
 .contact__form {
-  max-width: 642px;
+  max-width: 872px;
   display: grid;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
