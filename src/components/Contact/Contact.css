@@ -57,6 +57,11 @@
   padding: 0.75rem 1rem;
 }
 
+.contact__buttons {
+  display: flex;
+  max-width: 100%;
+}
+
 .contact__button {
   max-width: 120px;
   border: none;
@@ -68,10 +73,40 @@
   border: 3px solid #071019;
   border-radius: 0.5rem;
   color: #071019;
+  justify-self: end;
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
 }
 
+.contact__link {
+  width: 58px;
+  height: 58px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 10px 0 0;
+  padding: 0;
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
+}
 
+.contact__link:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.contact__link:last-of-type {
+  margin-left: 0;
+}
+
+.contact__link_telegram {
+  background-image: url('../../assets/images/telegram_big.svg');
+}
+
+.contact__link_github {
+  background-image: url('../../assets/images/github_big.svg');
+}
+
+.contact__link_steam {
+  background-image: url('../../assets/images/steam_big.svg');
+}

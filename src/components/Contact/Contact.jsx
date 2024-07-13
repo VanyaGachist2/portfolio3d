@@ -20,10 +20,12 @@ function Contact () {
           <textarea
             className='contact__area'
             placeholder='Who are you?'
+            rows='10'
             ></textarea>
           <div className='contact__buttons'>
-            <a href='https://vk.com/ibolvan123' className='contact__link contact__link_vk'></a>
-            <a href='#' className='contact__link contact__link_github'></a>
+            <a href='https://vk.com/ibolvan123' className='contact__link contact__link_telegram'></a>
+            <a href='https://github.com/VanyaGachist2' className='contact__link contact__link_github'></a>
+            <a href='#' className='contact__link contact__link_steam'></a>
           </div>
           <button type='submit' className='contact__button'>Отправить</button>
         </form>
