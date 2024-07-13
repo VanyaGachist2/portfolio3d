@@ -6,7 +6,7 @@ function Home ({ homeDark }) {
   let currentAge = 20;
   const currentDay = new Date();
   const getDay = currentDay.getDate();
-  const getMonth = currentDay.getMonth();
+  const getMonth = currentDay.getMonth() + 1;
   if (getDay === 5 && getMonth === 11) {
     currentAge += 1;
   }
