@@ -12,9 +12,10 @@
 
 .skills__container {
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 200px;
   max-width: 872px;
   font-family: 'JetBrain';
+  display: flex;
 }
 
 .skills__container_dark {
@@ -29,11 +30,19 @@
 
 .skills__skills {
   margin-top: 50px;
-  display: flex;
 }
 
 .skills__animate {
   width: 450px;
   height: 450px;
   margin-left: auto;
+}
+
+.skills__heading {
+  font-size: 54px;
+  line-height: 2rem;
+  font-weight: 900;
+  max-width: 853px;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
 }
