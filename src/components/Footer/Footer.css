@@ -8,10 +8,11 @@
 .footer__container {
   margin: 0 auto;
   padding-top: 100px;
-  max-width: 672px;
+  max-width: 872px;
   background-color: rgb(72, 71, 71);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   color: gray;
+  font-family: 'JetBrain';
 }
