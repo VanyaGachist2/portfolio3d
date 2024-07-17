@@ -1,4 +1,5 @@
 import './Header.css';
+import { motion } from 'framer-motion';
 
 function Header({ isDark, toogleButton }) {
   const links = [
@@ -27,15 +28,18 @@ function Header({ isDark, toogleButton }) {
     <header className={`header ${isDark ? 'header_dark' : ''}`}>
       <section className={`header__container ${isDark ? 'header__container_dark' : ''}`}>
         <div className="header__logo"></div>
-        <nav className='header__nav'>
+        <nav
+          className='header__nav'
+          >
           {links.map((a, i) => {
             return (
-              <a
+              <motion.a
                 href={a.href}
+                whileHover={{ scale: 1.1 }}
                 key={i}
                 className={`header__link ${isDark ? 'header__link_color_dark' : ''}`}>
                 {a.title}
-              </a>
+              </motion.a>
             )
           })}
         </nav>
